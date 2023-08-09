@@ -2,7 +2,7 @@
 .card {
     margin: 10px; /* Adjust this value to set the desired margin */
     border: 1px solid #ccc; /* Add border to each card */
-    height: 85%; /* Make cards fill the height of the parent container */
+    height: 85%; 
   }
   
   /* Make images equal size and responsive */
