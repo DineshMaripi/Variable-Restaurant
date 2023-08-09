@@ -1,7 +1,7 @@
 /* Apply margin between items */
 .card {
     margin: 10px; /* Adjust this value to set the desired margin */
-    border: 1px solid #ccc; /* Add border to each card */
+    border: 1px solid #ccc; 
     height: 85%; 
   }
   
