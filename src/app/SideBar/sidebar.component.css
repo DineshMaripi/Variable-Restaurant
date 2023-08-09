@@ -1,0 +1,22 @@
+.sidebarTabel {
+    width: 100%; /* Ensure the table takes full width of its container */
+    text-align: center; /* Center the text within the table cells */
+    padding: 10px; /* Add padding to the table */
+    margin-top: 15px;
+   
+  }
+
+  .sidebarTabel td {
+    font-size: 18px; /* Increase font size */
+    padding: 20px; /* Add additional padding within each cell */
+  }
+
+  .sidebarTabel td :hover{
+   color: blue;
+  }
+  .col-sm-2 {
+    width: 15vw; /* 20% of the viewport width */
+  }
+
+  
+ 

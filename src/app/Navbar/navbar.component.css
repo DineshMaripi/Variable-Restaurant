@@ -1,0 +1,7 @@
+.navbar-nav .nav-link {
+    /* margin-right: 50px; */
+    margin-left: 20px; /* Add extra right margin between nav items */
+  }
+  .navbar-brand{
+    margin-right: 400px;
+  }

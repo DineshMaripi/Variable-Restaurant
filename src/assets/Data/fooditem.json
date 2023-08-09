@@ -1,0 +1,76 @@
+[
+    {
+      "name": "Chicken Boneless Biryani",
+      "cost": "₹325",
+      "preparationTime": "15 minutes",
+      "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/iivuhjc2mswi9lublktf"
+    },
+    {
+      "name": "Chicken Biryani",
+      "cost": "₹325",
+      "preparationTime": "20 minutes",
+      "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/cfdxszthzrf0eqgpivpl"
+    },
+    {
+        "name": "Paneer Biryani",
+        "cost": "₹330",
+        "preparationTime": "20 minutes",
+        "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/gehax5kizfwncsgkris2"
+      },
+      {
+        "name": "Mutton Biryani",
+        "cost": "₹385",
+        "preparationTime": "15 minutes",
+        "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/lemdxwdqkkgrkvwhooge"
+      },
+      {
+        "name": "Special Hyderabad Mutton Biryani",
+        "cost": "₹359",
+        "preparationTime": "15 minutes",
+        "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/slpmiwf2lzxym4celltr"
+      },
+      {
+        "name": "Malabar Mutton Biryani",
+        "cost": "₹256",
+        "preparationTime": "15 minutes",
+        "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/02030cce70ff78f6259008bcfab4539a"
+      },
+      {
+        "name": "Gongura Mutton Biryani",
+        "cost": "₹309",
+        "preparationTime": "15 minutes",
+        "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/607b401d9ca2246f8747a295639abc66"
+      },
+      {
+        "name": "Mutton Keema Biryani ",
+        "cost": "₹425",
+        "preparationTime": "15 minutes",
+        "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/bsswvqauvfo1qg4lqblz"
+      },
+      {
+        "name": "Special Hyderabad Fish Biryani",
+        "cost": "₹349",
+        "preparationTime": "15 minutes",
+        "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/gnmjviqk4xwfq5zxzqg5"
+      },
+      {
+        "name": "Fish Biryani",
+        "cost": "₹298",
+        "preparationTime": "15 minutes",
+        "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/a0116633f844f96c5352a9fc0ca2be91"
+      },
+      {
+        "name": "Prawns Fry Biryani (serves-2)",
+        "cost": "₹349",
+        "preparationTime": "15 minutes",
+        "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/m4umweuoluu8inlcrlel"
+      },
+      {
+        "name": "Prawns Fry",
+        "cost": "₹349",
+        "preparationTime": "15 minutes",
+        "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/21999b84c497b3a567d67d1178695b36"
+      }
+
+  ]
+  

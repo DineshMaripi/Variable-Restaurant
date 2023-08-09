@@ -1,0 +1,32 @@
+/* Apply margin between items */
+.card {
+    margin: 10px; /* Adjust this value to set the desired margin */
+    border: 1px solid #ccc; /* Add border to each card */
+    height: 85%; /* Make cards fill the height of the parent container */
+  }
+  
+  /* Make images equal size and responsive */
+  .card-img-top {
+    height: 200px; /* Set the desired height for images */
+  /*  object-fit: cover;  Maintain aspect ratio and cover container */
+  }
+  
+  /* Center the button */
+  .text-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%; /* Ensure the button is centered vertically */
+  }
+  .btn-center {
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%; /* Ensure the button is centered vertically */
+  }
+
+  p{
+    font-size: small;
+    margin-top: 0;
+  }
