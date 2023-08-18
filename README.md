@@ -1,6 +1,6 @@
-# App
+# Variable Angular Restaurent
+Welcome to the Variable Restaurants Delivery Application! This project is a web application built using HTML, CSS, and Angular that aims to provide a seamless and user-friendly experience for customers to order food from various restaurants and have it delivered to their doorstep. This README file will provide you with a clear understanding of the project's details and how to get started.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.4.
 
 ## Development server
 
