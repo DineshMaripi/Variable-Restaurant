@@ -3,6 +3,10 @@
     margin: 10px; /* Adjust this value to set the desired margin */
     border: 1px solid #ccc; 
     height: 85%; 
+
+  }
+  .card:hover{
+    transform:scale(1.1);
   }
   
   /* Make images equal size and responsive */
