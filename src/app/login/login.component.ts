@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { AuthService } from '../auth.service';
 
 @Component({
   selector: 'app-login',
@@ -8,7 +9,8 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class LoginComponent {
   loginForm!: FormGroup;
-  constructor(private formBuilder: FormBuilder) {
+  credentials: any = {};
+  constructor(private formBuilder: FormBuilder,private authService: AuthService) {
     this.loginForm = this.formBuilder.group({
       email: ['', [Validators.required, Validators.email]],
       password: [
@@ -24,6 +26,16 @@ export class LoginComponent {
   }
 
   onSubmit() {
+    this.authService.signup(this.credentials).subscribe({
+      next: (response: any) => {
+        console.log(response);
+        // Handle successful registration (e.g., display success message)
+      },
+      error: (error: any) => {
+        console.log('Error:', error);
+        // Handle registration failure (e.g., display error message)
+      },
+    });
     if (this.loginForm.valid) {
       console.log(this.loginForm.value);
     }

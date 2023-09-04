@@ -1,47 +1,49 @@
-
 <div class="container">
-    <app-sidebar></app-sidebar>
-    <div class="signupform">
-  <h1>singup</h1>
-  <form [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
-     <input type="text" name="firstName" class="firstName" formControlName="firstName" placeholder="FirstName">
-     
-     <input type="text" name="lastName" class="lastName" formControlName="lastName" placeholder="LastName">
-     <div *ngIf="signUpForm?.get('firstName')?.hasError('required') && signUpForm?.get('firstName')?.touched">
-      <p class="error">**FirstName is required and must be entered</p>
+  <app-sidebar></app-sidebar>
+  <div class="signupform">
+    <h1>singup</h1>
+    <form [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
+      <input type="text" name="firstName" class="firstName" formControlName="firstName" placeholder="FirstName">
+
+      <input type="text" name="lastName" class="lastName" formControlName="lastName" placeholder="LastName">
+      <div *ngIf="signUpForm?.get('firstName')?.hasError('required') && signUpForm?.get('firstName')?.touched">
+        <p class="error">**FirstName is required and must be entered</p>
+      </div>
+      <div *ngIf="signUpForm?.get('lastName')?.hasError('required') && signUpForm?.get('lastName')?.touched">
+        <p class="error">**lastName is required and must be entered</p>
+      </div>
+      <input type="email" name="email" class="email" formControlName="email" placeholder="Email" required
+        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}">
+      <div *ngIf="signUpForm?.get('email')?.hasError('required') && signUpForm?.get('email')?.touched">
+        <p class="error">**Email is required and must be entered</p>
+      </div>
+      <div *ngIf="signUpForm?.get('email')?.hasError('pattern') && signUpForm?.get('email')?.touched">
+        <p class="error">**Please enter a valid email address</p>
+      </div>
+      <input type="password" name="password" class="password" formControlName="password" minlength="5" maxlength="10"
+        placeholder="Password">
+      <div *ngIf="signUpForm?.get('password')?.hasError('required') && signUpForm.get('password')?.touched">
+        <p class="error">**Password is required</p>
+      </div>
+      <div *ngIf="signUpForm?.get('password')?.hasError('minlength')">
+        <p class="error">Password should be between 5 to 10 characters</p>
+      </div>
+
+      <input type="password" name="conformpassword" class="conformpassword" minlength="5" maxlength="10"
+        formControlName="conformpassword" placeholder="Conform Password"><br>
+      <div
+        *ngIf="signUpForm?.get('conformpassword')?.hasError('required') && signUpForm.get('conformpassword')?.touched">
+        <p class="error">**Password is required</p>
+      </div>
+      <div *ngIf="signUpForm?.get('conformpassword')?.hasError('minlength')">
+        <p class="error">Password should be between 5 to 10 characters</p>
+      </div>
+      <div *ngIf="signUpForm.hasError('passwordMismatch')">
+        <p class="error">Passwords do not match</p>
+      </div>
+      <input type="checkbox" class="checkbox" [(ngModel)]="isCheck">I accept the terms of use & privacy Policy<br>
+      <button [disabled]="!isCheck">signup</button><br><br>
+      <span>Already Have an account ? <a>login Here</a></span>
+    </form>
   </div>
-  <div *ngIf="signUpForm?.get('lastName')?.hasError('required') && signUpForm?.get('lastName')?.touched">
-    <p class="error">**lastName is required and must be entered</p>
 </div>
-     <input type="email" name="email" class="email" formControlName="email" placeholder="Email" required  pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}">
-     <div *ngIf="signUpForm?.get('email')?.hasError('required') && signUpForm?.get('email')?.touched">
-      <p class="error">**Email is required and must be entered</p>
-  </div>
-  <div *ngIf="signUpForm?.get('email')?.hasError('pattern') && signUpForm?.get('email')?.touched">
-      <p class="error">**Please enter a valid email address</p>
-  </div>
-     <input type="password" name="password" class="password" formControlName="password" minlength="5" maxlength="10" placeholder="Password">
-     <div *ngIf="signUpForm?.get('password')?.hasError('required') && signUpForm.get('password')?.touched">
-      <p class="error">**Password is required</p>
-  </div>
-  <div *ngIf="signUpForm?.get('password')?.hasError('minlength')">
-      <p class="error">Password should be between 5 to 10 characters</p>
-  </div>
-
-     <input type="password" name="conformpassword" class="conformpassword" minlength="5" maxlength="10"formControlName="conformpassword" placeholder="Conform Password"><br>
-     <div *ngIf="signUpForm?.get('conformpassword')?.hasError('required') && signUpForm.get('conformpassword')?.touched">
-      <p class="error">**Password is required</p>
-  </div>
-  <div *ngIf="signUpForm?.get('conformpassword')?.hasError('minlength')">
-      <p class="error">Password should be between 5 to 10 characters</p>
-  </div>
-  <div *ngIf="signUpForm.hasError('passwordMismatch')">
-    <p class="error">Passwords do not match</p>
-  </div>
-     <input type="checkbox" class="checkbox">I accept the terms of use & privacy Policy<br>
-    <button>signup</button><br><br>
-    <span>Already Have an account ? <a>login Here</a></span>
-  </form>
-  </div>
-    </div>
-
