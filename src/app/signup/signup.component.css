@@ -1,0 +1,47 @@
+.signupform {
+    display: block;
+    margin: 20px auto; /* Center the form horizontally by using 'auto' for left and right margins */
+    width:50%; /* Change the width as desired, e.g., 80% of the parent container */
+    max-width: 1500px; /* Limit the maximum width to 1500px */
+    background-color: black;
+    text-align: center;
+    color: aliceblue;
+}
+
+.signupform input
+
+{
+    display: inline-block;
+     margin-right: 20px;
+     margin-top: 20px;
+     height: 40px;
+}
+.email {
+    width: 400px;
+    height: 40px;
+  
+}
+.password {
+    width: 400px;
+    height: 40px;
+  
+}
+.conformpassword {
+    width: 400px;
+    height: 40px;
+  
+}
+.checkbox{
+   height: 10px;
+   width: 10px;
+}
+button{
+    margin: 20px;
+    background-color:darkslateblue;
+    border-radius: 10px;
+    height:30%;
+    width:60%;
+}
+.error{
+    color: red;
+}

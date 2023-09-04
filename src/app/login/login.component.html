@@ -1,5 +1,84 @@
-
 <div class="container">
-<app-sidebar></app-sidebar>
-<h1>Login works</h1>
+    <app-sidebar></app-sidebar>
+
+    <div class="loginform">
+        <h1>login</h1>
+
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" formControlName="email" required
+                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}">
+            <div *ngIf="loginForm?.get('email')?.hasError('required') && loginForm?.get('email')?.touched">
+                <p class="error">**Email is required and must be entered</p>
+            </div>
+            <div *ngIf="loginForm?.get('email')?.hasError('pattern') && loginForm?.get('email')?.touched">
+                <p class="error">**Please enter a valid email address</p>
+            </div>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" formControlName="password">
+            <div *ngIf="loginForm?.get('password')?.hasError('required') && loginForm.get('password')?.touched">
+                <p class="error">**Password is required</p>
+            </div>
+            <div *ngIf="loginForm?.get('password')?.hasError('minlength')">
+                <p class="error">Password should be between 5 to 10 characters</p>
+            </div>
+
+           <label>forgot password?</label><br>
+            <button>log in</button><br><br>
+            <div>Or Sign Up Using</div> <br><br>
+            <div class="fonts"><img width="60" height="60"
+                    src="https://img.icons8.com/3d-plastilina/69/facebook--v2.png" alt="facebook--v2" />
+                <img width="60" height="60" src="https://img.icons8.com/plasticine/100/gmail-new.png" alt="gmail-new" />
+                <img width="60" height="60" src="https://img.icons8.com/fluency/96/instagram-pride.png"
+                    alt="instagram-pride" />
+            </div><br>
+            Or Sign Up Using<br><br>
+            <a class="nav-link" [routerLink]="['/signup']">Signup</a>
+
+        </form>
+    </div>
 </div>
+<!-- <div class="container">
+    <app-sidebar></app-sidebar>
+
+    <div class="loginform">
+        <h1>login</h1>
+
+        <form (ngSubmit)="onSubmit()" #loginForm="ngForm">
+
+           <label for="email">Email</label>
+            <input type="email" id="email" formControlName="email" required
+                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}">
+            <div *ngIf="loginForm?.get('email')?.hasError('required') && loginForm?.get('email')?.touched">
+                <p class="error">**Email is required and must be entered</p>
+            </div>
+            <div *ngIf="loginForm?.get('email')?.hasError('pattern') && loginForm?.get('email')?.touched">
+                <p class="error">**Please enter a valid email address</p>
+            </div>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" formControlName="password">
+            <div *ngIf="loginForm?.get('password')?.hasError('required') && loginForm.get('password')?.touched">
+                <p class="error">**Password is required</p>
+            </div>
+            <div *ngIf="loginForm?.get('password')?.hasError('minlength')">
+                <p class="error">Password should be between 5 to 10 characters</p>
+            </div>
+        
+
+            <label>forgot password?</label><br>
+            <button>log in</button><br><br>
+            <div>Or Sign Up Using</div> <br><br>
+            <div class="fonts"><img width="60" height="60"
+                    src="https://img.icons8.com/3d-plastilina/69/facebook--v2.png" alt="facebook--v2" />
+                <img width="60" height="60" src="https://img.icons8.com/plasticine/100/gmail-new.png" alt="gmail-new" />
+                <img width="60" height="60" src="https://img.icons8.com/fluency/96/instagram-pride.png"
+                    alt="instagram-pride" />
+            </div><br>
+            Or Sign Up Using<br><br>
+            <div>SignUp</div><br>
+        </form>
+    </div>
+</div> -->

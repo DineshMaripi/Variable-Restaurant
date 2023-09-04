@@ -1,0 +1,64 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loginform {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 20px;
+  width: 400px;
+  text-align: center;
+  height:100vh;
+  margin:10px 250px;
+  align-items: center;
+}
+
+.loginform h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.loginform label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  float: left;
+}
+
+.loginform input[type="email"],
+.loginform input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.loginform button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin: 30px 40px;
+  cursor: pointer;
+}
+
+.loginform button:hover {
+  background-color: #0056b3;
+}
+.fonts{
+  display:flex;
+  justify-content:space-evenly;
+}
+.error {
+  color: red;
+  white-space: nowrap; /* Prevent text from wrapping to the next line */
+  overflow: hidden; /* Hide any text that overflows the box */
+  text-overflow: ellipsis; /* Display an ellipsis (...) for text that overflows */
+  max-width: 100%; /* Ensure the error message does not exceed its container's width */
+  display: inline-block; /* Display the error message as an inline block */
+}

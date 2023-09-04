@@ -14,6 +14,7 @@ import { LoginComponent } from './login/login.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { SignupComponent } from './signup/signup.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -29,7 +30,8 @@ import { SignupComponent } from './signup/signup.component';
     HomepageComponent,
     SignupComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule,FoodmenuModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule,ReactiveFormsModule,FoodmenuModule,FormsModule],
+ 
   providers: [FoodItemService],
   bootstrap: [AppComponent],
 })

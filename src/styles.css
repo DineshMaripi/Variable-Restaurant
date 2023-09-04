@@ -1,10 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 .container {
-    display:inline-flex;
-    margin: 20px;
-    padding: 20px;
+  display:inline-flex;
+  margin: 20px;
+  padding: 20px;
 
-  }
-  .container app-sidebar {
-    margin-right: 20px; /* Adds space between the components */
-  }
+}
+.container app-sidebar {
+  margin-right: 20px; /* Adds space between the components */
+}

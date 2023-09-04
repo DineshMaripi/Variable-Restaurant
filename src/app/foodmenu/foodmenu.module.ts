@@ -5,9 +5,8 @@ import { ChickenComponent } from './chicken/chicken.component';
 import { FishComponent } from './fish/fish.component';
 import { MottonComponent } from './motton/motton.component';
 import { RouterModule, Routes } from '@angular/router';
-const routes:Routes = [
-  { path: '', component: BiryaniComponent }
-];
+import { SideBarComponent } from '../SideBar/sidebar.component';
+
 
 @NgModule({
   declarations: [
@@ -15,10 +14,11 @@ const routes:Routes = [
     ChickenComponent,
     FishComponent,
     MottonComponent
+   
   ],
   imports: [
     CommonModule,
-    RouterModule.forChild(routes)
+   
   ]
 })
 export class FoodmenuModule { }
