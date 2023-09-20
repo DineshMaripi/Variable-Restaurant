@@ -1,7 +1,26 @@
-<div class="container">
-    <app-sidebar></app-sidebar>
-    <h1>home page</h1>
+<app-image-slider></app-image-slider>
+<div style="width: 1200px; height: 500px; text-align:center;margin-top:100px; padding:0;">
+    <ng-image-slider #nav
+      [images]="imageSlide"
+      [infinite]="true"
+      [autoSlide]="3"
+      [imageSize]="{width: '280px', height:'280px' }"
+      slideImage="1"></ng-image-slider>
+  </div>
+<h1 class="banner">Main Course</h1>
+  <div class="row justify-content-center" id="container">
+    <div class="col-md-4" *ngFor="let item of data" >
+      <div class="card">
+        <img class="card-img-top img-fluid" src="{{ item.image }}" alt="{{ item.name }}"> <!-- Adding img-fluid class for responsive images -->
+        <div class="card-body">
+         <p class="card-title">{{ item.name }}</p>
+          <p class="card-text">Cost: {{ item.cost }}</p>
+          <!-- <p class="card-text">Preparation Time: {{ item.preparationTime }}</p> -->
+          <div class="text-center">
+            <button (click)="addToCart($event)" class="btn btn-sm btn-primary">Add To Cart</button>
+          </div>
+        </div>
+      </div>
     </div>
-
-
-
+  </div>
+  

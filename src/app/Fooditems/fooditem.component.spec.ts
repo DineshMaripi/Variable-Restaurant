@@ -3,33 +3,68 @@ import { FoodItemComponent } from './fooditem.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FoodItemService } from '../Services/fooditem.service';
 import { of } from 'rxjs';
+import { CartService } from '../Services/cart.service';
+import { DebugElement } from '@angular/core';
+import { By } from '@angular/platform-browser';
 
-describe('FoodItemComponent', () => {
+fdescribe('FoodItemComponent', () => {
   let component: FoodItemComponent;
   let fixture: ComponentFixture<FoodItemComponent>;
   let mockFoodItemService: Partial<FoodItemService>;
-
+  let mockCartService:Partial<CartService>
+  let debugElement:DebugElement
+let item:any
   beforeEach( () => {
     mockFoodItemService = {
       getFoodItems: jasmine.createSpy().and.returnValue(of([])),
+     
     };
+    mockCartService={
+      addToCart:jasmine.createSpy().and.returnValue(of(item))
+    }
 
      TestBed.configureTestingModule({
       declarations: [FoodItemComponent],
       imports: [HttpClientModule],
-      providers: [{ provide: FoodItemService, useValue: mockFoodItemService }],
+      providers: [{ provide: FoodItemService, useValue: mockFoodItemService },{provide:CartService,useValue:mockCartService}],
     });
   });
 
   beforeEach(() => {
     fixture = TestBed.createComponent(FoodItemComponent);
     component = fixture.componentInstance;
+    debugElement=fixture.debugElement
     fixture.detectChanges();
   });
 
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should check debugElement', () => {
+    // Query the element by CSS selector
+    const buttonElement = debugElement.query(By.css('.title'));
+
+    // Check the text content of the element
+    expect(buttonElement.nativeElement.textContent).toBe('fooditems');
+  });
+
+it('should check debugElement', () => {
+  // Query the element by CSS selector
+  const buttonElement = debugElement.query(By.css('.button'));
+
+  // Trigger a click event on the button element
+  buttonElement.triggerEventHandler('click', null);
+
+  // Add your assertions or test the component's behavior after the click event
+});
+
+
+
+
+
+
+
 
   it('should fetch and render food items on ngOnInit', () => {
     const dummyResponse: any[] = [
@@ -90,5 +125,5 @@ describe('FoodItemComponent', () => {
     });
   });
 
-  // Add more test cases as needed
+
 });

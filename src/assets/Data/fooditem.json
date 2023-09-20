@@ -3,74 +3,103 @@
       "name": "Chicken Boneless Biryani",
       "cost": "₹325",
       "preparationTime": "15 minutes",
+      "category":"Biryani",
       "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/iivuhjc2mswi9lublktf"
     },
     {
       "name": "Chicken Biryani",
       "cost": "₹325",
       "preparationTime": "20 minutes",
+      "category":"Biryani",
       "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/cfdxszthzrf0eqgpivpl"
     },
     {
         "name": "Paneer Biryani",
         "cost": "₹330",
+        "category":"Biryani",
         "preparationTime": "20 minutes",
         "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/gehax5kizfwncsgkris2"
       },
       {
         "name": "Mutton Biryani",
         "cost": "₹385",
+        "category":"Biryani",
         "preparationTime": "15 minutes",
         "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/lemdxwdqkkgrkvwhooge"
       },
       {
         "name": "Special Hyderabad Mutton Biryani",
         "cost": "₹359",
+        "category":"Biryani",
         "preparationTime": "15 minutes",
         "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/slpmiwf2lzxym4celltr"
       },
       {
         "name": "Malabar Mutton Biryani",
         "cost": "₹256",
+        "category":"Biryani",
         "preparationTime": "15 minutes",
         "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/02030cce70ff78f6259008bcfab4539a"
       },
       {
         "name": "Gongura Mutton Biryani",
         "cost": "₹309",
+        "category":"Biryani",
         "preparationTime": "15 minutes",
         "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/607b401d9ca2246f8747a295639abc66"
       },
       {
         "name": "Mutton Keema Biryani ",
         "cost": "₹425",
+        "category":"Biryani",
         "preparationTime": "15 minutes",
         "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/bsswvqauvfo1qg4lqblz"
       },
       {
         "name": "Special Hyderabad Fish Biryani",
         "cost": "₹349",
+        "category":"Biryani",
         "preparationTime": "15 minutes",
         "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/gnmjviqk4xwfq5zxzqg5"
       },
       {
         "name": "Fish Biryani",
         "cost": "₹298",
+        "category":"Biryani",
         "preparationTime": "15 minutes",
         "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/a0116633f844f96c5352a9fc0ca2be91"
       },
       {
         "name": "Prawns Fry Biryani (serves-2)",
         "cost": "₹349",
+        "category":"Biryani",
         "preparationTime": "15 minutes",
         "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/m4umweuoluu8inlcrlel"
       },
       {
         "name": "Prawns Fry",
         "cost": "₹349",
+        "category":"prawn",
         "preparationTime": "15 minutes",
         "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/21999b84c497b3a567d67d1178695b36"
+      },
+      {
+        "name": "chicken fry",
+        "cost": "₹349",
+        "category":"Chicken",
+        "preparationTime": "15 minutes",
+        "image": "https://b.zmtcdn.com/data/dish_photos/ff6/df55589b55a0390c2e934dc986258ff6.jpg"
+      },
+      {
+        "name": "chicken Kabab",
+        "cost": "₹349",
+        "category":"Chicken",
+        "preparationTime": "15 minutes",
+        "image": "https://b.zmtcdn.com/data/dish_photos/d7c/68f8e5fafe51ffdccde9a1ffd99fed7c.jpg"
       }
+      
+      
+
 
   ]
   
