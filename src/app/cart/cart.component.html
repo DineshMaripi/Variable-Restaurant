@@ -1,0 +1,11 @@
+<div class="container">
+  <app-sidebar></app-sidebar>
+  <div *ngFor="let item of cartItems" class="card">
+    <img class="card-img-top img-fluid" src="{{ item.image }}" alt="{{ item.name }}">
+    <div class="card-body">
+      <p class="card-title">{{ item.name }}</p>
+      <p class="card-text">Price: ${{ item.price }}</p>
+      <p class="card-text">Quantity: {{ item.quantity }}</p>
+    </div>
+  </div>
+</div>
